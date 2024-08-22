@@ -54,7 +54,7 @@ const Login = () => {
                                         passwordValue.trim().length <= 20
                                     ) {
                                         const res = await fetch(
-                                            "http://localhost:3069/login",
+                                            "https://notes-app-back-gfpf.onrender.com/login",
                                             {
                                                 method: "POST",
                                                 headers: {
