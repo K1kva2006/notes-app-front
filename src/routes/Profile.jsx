@@ -174,7 +174,7 @@ const Profile = () => {
                                                 : setRequest(0);
                                 }}
                             >
-                                Reload Page For New Data
+                                Click Here For New Data
                             </button>
                             <p className="error-msg">{status}</p>
                         </form>
