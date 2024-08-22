@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p,
+input,
+button,
+li {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.error-msg {
+    width: 100%;
+    max-width: 250px;
+    color: red;
+}
+.register-login-main-cont {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(241, 216, 227);
+    background: radial-gradient(
+        circle,
+        rgb(216, 150, 179) 0%,
+        rgb(126, 183, 247) 100%
+    );
+}
+.register-login-border-cont {
+    width: 90%;
+    height: 90vh;
+    background: rgb(152, 168, 241);
+    background: radial-gradient(
+        circle,
+        rgb(77, 109, 253) 0%,
+        rgb(43, 135, 240) 0%,
+        rgb(103, 167, 241) 0%
+    );
+}
+.register-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+.register-login-main-title {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.register-login-form-inputs {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: gray;
+}
+.register-login-form-button {
+    padding: 6px 8px;
+    border: none;
+    color: white;
+    background-color: green;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.register-login-form-button:hover {
+    opacity: 0.8;
+}
+.register-login-form-button:active {
+    opacity: 0.6;
+}
+.status-message {
+    color: red;
+}
+.main-title {
+    text-align: center;
+}
+.profile-nav {
+    display: flex;
+}
+.profile-nav-ul {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+.profile-nav-ul > li {
+    list-style: none;
+    font-weight: bold;
+}
+.profile-section {
+    margin-top: 50px;
+}
+.profile-note-section-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.profile-note-section-div-wrapper {
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow-y: scroll;
+}
+.note-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    width: 92%;
+    max-width: 600px;
+    max-height: 250px;
+    border: 2px solid black;
+}
+.note-wrapper > p {
+    text-align: center;
+    padding: 5px;
+    max-width: 400px;
+    width: 100%;
+    word-break: break-all;
+}
+.note-wrapper > button {
+    cursor: pointer;
+    padding: 2px;
+    font-size: 14px;
+    background-color: rgb(248, 167, 167);
+    margin: 5px;
+}
+.note-wrapper > h3 {
+    text-align: center;
+}
+.profile {
+    height: 100vh;
+    background-color: gainsboro;
+}
+.profile-add-note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.profile-add-note-form > input {
+    padding: 2px;
+    font-size: 18px;
+    background-color: rgb(222, 219, 219);
+}
+.profile-add-note-form > button {
+    padding: 2px;
+    font-size: 16px;
+    background-color: rgb(222, 219, 219);
+    cursor: pointer;
+}
