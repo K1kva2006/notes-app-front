@@ -66,7 +66,7 @@ const Register = () => {
                                         passwordValue.trim().length <= 20
                                     ) {
                                         await fetch(
-                                            "http://localhost:3069/register",
+                                            "https://notes-app-back-gfpf.onrender.com/register",
                                             {
                                                 method: "POST",
                                                 headers: {
