@@ -14,7 +14,7 @@ const Profile = () => {
 
     useEffect(() => {
         if (!localStorage.getItem("authToken")) {
-            return navigateLogin("/login");
+            return navigateLogin("/");
         }
         return async () => {
             try {
