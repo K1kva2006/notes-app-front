@@ -18,7 +18,7 @@ const Profile = () => {
         }
         return async () => {
             try {
-                const req = await fetch("http://localhost:3069/getUserData", {
+                const req = await fetch("https://notes-app-back-gfpf.onrender.com/getUserData", {
                     method: "GET",
                     headers: {
                         Authorization:
@@ -67,7 +67,7 @@ const Profile = () => {
                                             onClick={async () => {
                                                 try {
                                                     const req = await fetch(
-                                                        "http://localhost:3069/deleteNote",
+                                                        "https://notes-app-back-gfpf.onrender.com/deleteNote",
                                                         {
                                                             method: "POST",
                                                             headers: {
@@ -129,7 +129,7 @@ const Profile = () => {
                                             noteValue.trim().length < 150
                                         ) {
                                             const req = await fetch(
-                                                "http://localhost:3069/addNote",
+                                                "https://notes-app-back-gfpf.onrender.com/addNote",
                                                 {
                                                     method: "POST",
                                                     headers: {
