@@ -154,7 +154,7 @@ const Profile = () => {
                                             setNoteValue("");
                                             request === 0
                                                 ? setRequest(1)
-                                                : setRequest(1);
+                                                : setRequest(0);
                                         } else {
                                             setStatus(
                                                 "Note Is Too Long or to Small"
@@ -169,7 +169,9 @@ const Profile = () => {
                             </button>
                             <button
                                 onClick={() => {
-                                    window.location.reload();
+                                    request === 0
+                                                ? setRequest(1)
+                                                : setRequest(0);
                                 }}
                             >
                                 Reload Page For New Data
