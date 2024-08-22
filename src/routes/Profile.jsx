@@ -4,7 +4,6 @@ import moment from "moment"
 
 const Profile = () => {
     const navigateLogin = useNavigate();
-    const dickHead = useNavigate()
 
     const [noteValue, setNoteValue] = useState("");
 
@@ -46,7 +45,7 @@ const Profile = () => {
                                 <Link
                                     onClick={() => {
                                         localStorage.removeItem("authToken");
-                                        dickHead("/")
+                                        window.location.reload();
                                     }}
                                 >
                                     Logout
