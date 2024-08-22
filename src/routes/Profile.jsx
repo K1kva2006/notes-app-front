@@ -167,6 +167,13 @@ const Profile = () => {
                             >
                                 Add Note
                             </button>
+                            <button
+                                onClick={() => {
+                                    window.location.reload();
+                                }}
+                            >
+                                Reload Page For New Data
+                            </button>
                             <p className="error-msg">{status}</p>
                         </form>
                     </div>
